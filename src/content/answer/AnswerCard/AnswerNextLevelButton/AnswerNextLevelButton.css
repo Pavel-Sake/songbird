@@ -1,0 +1,23 @@
+
+.answerNextLevelButton {
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    padding: 10px;
+    border: none;
+    outline: none;
+
+    background: #5e804c;
+    font-size: 25px;
+
+    transition: background-color 0.8s;
+}
+
+.answerNextLevelButton:hover {
+    cursor: pointer;
+    background: #76a160;
+}
+
+.answerNextLevelButton:disabled {
+    background: #3b502f;
+}

@@ -1,0 +1,89 @@
+.answer {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    margin-top: 40px;
+}
+
+
+
+.answerList {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.listItem {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+
+    background: #c8d6d1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: none;
+    outline: none;
+    transition: opacity 0.8s;
+}
+
+.listItem--wrong {
+    background-color: red;
+}
+
+.listItem--right {
+    background-color: green;
+}
+
+.listItem:hover {
+    cursor: pointer;
+
+    opacity: 0.5;
+}
+
+
+.listItem__audioClick {
+    visibility: hidden;
+}
+
+.answerCard {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 220px auto;
+    grid-gap: 20px;
+
+
+    width: 100%;
+    /*background: green;*/
+}
+
+.answerImg {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.answerName {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.answerAudio {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.answerDescription {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
