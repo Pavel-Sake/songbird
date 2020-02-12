@@ -4,7 +4,6 @@ import Questions from "./questions/questions";
 import Answer from "./answer/answer";
 import birdsData from "./birdsData";
 
-
 export default function Content({rightData, activeLevel, onClickNextLevel, isDisabledButton}) {
   const [userAnswerName, setUserAnswerName] = useState(null);
   const [currentScore, setCurrentScore] = React.useState(0);
