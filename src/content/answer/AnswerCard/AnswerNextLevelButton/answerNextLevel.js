@@ -1,12 +1,11 @@
 import React from "react";
 import './AnswerNextLevelButton.css'
 
-export default function AnswerNextLevelButton({onClick, disabled}) {
+export default function AnswerNextLevelButton({nameButton, onClick, disabled}) {
 
   function handleClick() {
     onClick();
   }
-
 
   return (
     <button
@@ -14,7 +13,7 @@ export default function AnswerNextLevelButton({onClick, disabled}) {
       onClick={handleClick}
       disabled={disabled}
     >
-      Next Level
+      {nameButton}
     </button>
   );
 }

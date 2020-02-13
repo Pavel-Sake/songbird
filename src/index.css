@@ -22,16 +22,36 @@ code {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  /*background: grey;*/
 }
 
 .content {
   max-width: 1000px;
-  width: 100%;
+  padding: 0 20px;
 
   background: #595959;
 }
 
-/*header*/
+.content__congratulation {
+  font-size: 60px;
+  text-align: center;
+  color: #95b126;
+  text-shadow: 4px 4px 4px #132917;;
+}
+
+.content__theEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 35px;
+  text-align: center;
+  color: #95b126;
+  text-shadow: 4px 4px 4px #132917;;
+}
+
+.content__theEnd--animation {
+
+}
+
 

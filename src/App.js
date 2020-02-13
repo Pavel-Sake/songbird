@@ -12,22 +12,27 @@ function App() {
   const maxScore = 30;
   let currentPointsLevel = 0;
 
-
   let isDisabledButton = true;
 
+  function handleClickStartOverButton() {
+    setActiveLevel(0);
+  }
+
   function handleClickNextLevel() {
-    const newLevel = activeLevel + 1;
-    setActiveLevel(newLevel);
 
+    if (activeLevel < 5) {
+      const newLevel = activeLevel + 1;
+      setActiveLevel(newLevel);
 
-    setScore(currentPointsLevel - maxScore)
+      setScore(currentPointsLevel - maxScore)
+    }
 
   }
+
 
   const length = birdsData[activeLevel].length;
   const randomNumber = Math.round(Math.random() * (length - 0));
   const dataRandom = birdsData[activeLevel][randomNumber];
-
 
   return (
     <div className='wrapper'>
@@ -37,6 +42,7 @@ function App() {
         score={score}
         currentPointsLevel={currentPointsLevel}
         onClickNextLevel={handleClickNextLevel}
+        onClickStartOver={handleClickStartOverButton}
         isDisabledButton={isDisabledButton}
       />
     </div>

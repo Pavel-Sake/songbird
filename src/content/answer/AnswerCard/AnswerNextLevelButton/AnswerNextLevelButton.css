@@ -3,7 +3,9 @@
     grid-column: 1/3;
     grid-row: 2/3;
 
+    margin-top: 20px;
     padding: 10px;
+    border-radius: 8px;
     border: none;
     outline: none;
 
@@ -20,4 +22,10 @@
 
 .answerNextLevelButton:disabled {
     background: #3b502f;
+}
+
+@media (max-width: 320px) {
+    .answerNextLevelButton {
+        margin-top: 10px;
+    }
 }

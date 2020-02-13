@@ -6,7 +6,9 @@ import AnswerNextLevelButton from "./AnswerCard/AnswerNextLevelButton/answerNext
 
 import './answer.css'
 
-export default function Answer({data, activeLevel, rightAnswer, userAnswerName, isRightAnswerUser,  onChangeUserAnswer, onClickNextLevel, disabled}) {
+export default function Answer({data, activeLevel, rightAnswer, userAnswerName, isRightAnswerUser, onChangeUserAnswer, onClickNextLevel, disabled}) {
+
+  const nameButton = 'Next Level'
 
   function getDataPropertiesAnswer() {
     let dataPropertiesAnswer = null;
@@ -20,7 +22,6 @@ export default function Answer({data, activeLevel, rightAnswer, userAnswerName, 
 
     return dataPropertiesAnswer;
   }
-
 
 
   return (
@@ -43,7 +44,11 @@ export default function Answer({data, activeLevel, rightAnswer, userAnswerName, 
           <p>Послушайте плеер и выбирете птицу из списка</p>
         )
       }
-      <AnswerNextLevelButton onClick={onClickNextLevel} disabled={disabled} />
+      <AnswerNextLevelButton
+        onClick={onClickNextLevel}
+        disabled={disabled}
+        nameButton={nameButton}
+      />
     </section>
   )
 }

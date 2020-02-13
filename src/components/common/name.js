@@ -1,11 +1,8 @@
 import React from "react";
-
-const styles = {
-    fontSize: '25px'
-};
+import './name.css'
 
 export default function Name({name}) {
 return (
-    <div style={styles}>{name}</div>
+    <div className='content__name'>{name}</div>
 )
 }

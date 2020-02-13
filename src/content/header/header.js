@@ -3,6 +3,8 @@ import Levels from "./level";
 import Score from "./Score/Score";
 import './header.css';
 
+import songBirdImg from '../images/songBird.svg'
+
 
 class Header extends React.Component {
   constructor(props) {
@@ -20,8 +22,15 @@ class Header extends React.Component {
   render() {
     return (
       <header className='header'>
-        <h1 className='title'>Songbird</h1>
-        <Score currentScore={this.props.currentScore}/>
+        <div className='header__name'>
+          <div>
+            <img className='title__img' src={songBirdImg}/>
+            <span className='title'>Songbird</span>
+          </div>
+
+          <Score currentScore={this.props.currentScore}/>
+        </div>
+
         <ul className='headerLevels'>
           {this.array.map((item, idx) => {
             return (

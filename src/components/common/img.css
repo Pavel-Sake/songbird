@@ -1,0 +1,20 @@
+.content__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+@media (max-width: 375px) {
+    .content__img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .content__img {
+        width: 80px;
+        height: 80px;
+    }
+}
